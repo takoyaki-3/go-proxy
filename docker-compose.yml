@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  file_server:
+    image: golang:1.13
+    volumes: 
+      - ./volume:/volume
+    working_dir: /volume
+    ports: 
+      - 443:443
+    command: 
+      go run .
+    restart: always
+    tty: true
