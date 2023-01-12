@@ -2,7 +2,7 @@ version: '3'
 
 services:
   file_server:
-    image: golang:1.13
+    image: golang:1.19
     volumes: 
       - ./volume:/volume
     working_dir: /volume
